@@ -29,5 +29,16 @@ public class Notes {
 	 *  
 	 * 
 	 */
+	
+	public static void main(String[] args) {
+		
+		int y=10;
+		
+		float x=(float)10/3;
+		float z=(float) (y+x);
+		System.out.println(z);
+		
+		
+	}
 
 }
