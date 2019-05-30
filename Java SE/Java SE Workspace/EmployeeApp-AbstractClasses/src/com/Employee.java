@@ -1,6 +1,6 @@
 package com;
 
-public abstract class Employee {
+public class Employee {
 
 	private int empId;
 	private String empName;
@@ -17,8 +17,10 @@ public abstract class Employee {
 		System.out.println("-- Employee class acceptData");
 	}
 
-	public abstract void processSalary(); 
-	
+	public void processSalary() {
+		System.out.println("--- EMployee class processSalary");
+	}
+
 	public void display() {
 		System.out.println("Id: " + empId);
 		System.out.println("Name: " + empName);
