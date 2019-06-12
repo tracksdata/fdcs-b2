@@ -8,7 +8,7 @@ public class TreeMapDemo {
 
 		TreeMap<Object, Object> hm = new TreeMap<>();
 
-		hm.put(949, "Praveen");
+		hm.put(new Integer(222), new String("Praveen"));
 		hm.put(1, "James");
 		hm.put(222, "Kavya");
 		hm.put(847, null);
