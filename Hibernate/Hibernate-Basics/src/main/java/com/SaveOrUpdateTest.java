@@ -22,7 +22,6 @@ public class SaveOrUpdateTest {
 
 	
 		ses.saveOrUpdate(emp);
-
 		ses.beginTransaction().commit();
 
 		System.out.println("--- Done ---");
