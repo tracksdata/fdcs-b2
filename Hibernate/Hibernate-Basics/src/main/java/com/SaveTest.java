@@ -16,17 +16,14 @@ public class SaveTest {
 		Session ses = sf.openSession();
 
 		Employee emp = new Employee();
-		emp.setEmpId(13);
-		emp.setEmpName("Bucky");
-		emp.setSalary(46456);
+		emp.setEmpId(15);
+		emp.setEmpName("Ritam");
+		emp.setSalary(237527);
 
-		Department dept = new Department();
-		dept.setDeptId(12000);
-		dept.setDeptName("HR");
-		dept.setLoc("Kolkata");
+		
 
 		ses.save(emp);
-		ses.save(dept);
+	
 
 		ses.beginTransaction().commit();
 
