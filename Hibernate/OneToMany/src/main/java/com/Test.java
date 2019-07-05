@@ -15,12 +15,12 @@ public class Test {
 
 		Session ses = sf.openSession();
 
-		Employee e1 = new Employee(10, "Praveem", 37463744);
-		Employee e2 = new Employee(11, "James", 4584785);
-		Employee e3 = new Employee(12, "Ruth", 94754975);
-		Employee e4 = new Employee(13, "Ella", 3645747);
-		Employee e5 = new Employee(14, "Goedic", 345566);
-		Employee e6 = new Employee(15, "Wall", 45040588);
+		Employee e1 = new Employee(10, "Praveem", 12000);
+		Employee e2 = new Employee(11, "James", 5000);
+		Employee e3 = new Employee(12, "Ruth", 15000);
+		Employee e4 = new Employee(13, "Ella", 21000);
+		Employee e5 = new Employee(14, "Goedic", 7900);
+		Employee e6 = new Employee(15, "Wall", 3000);
 
 		Department dept = new Department();
 		dept.setDeptId(1024);

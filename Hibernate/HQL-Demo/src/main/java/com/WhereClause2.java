@@ -29,7 +29,7 @@ public class WhereClause2 {
 		
 		CriteriaBuilder  cu=ses.getCriteriaBuilder();
 	
-		CriteriaQuery<Employee> eee=cu.createQuery(Employee.class)
+		CriteriaQuery<Employee> eee=cu.createQuery(Employee.class);
 				
 		Root<Employee> root=eee.from(Employee.class);
 		eee.select(root);

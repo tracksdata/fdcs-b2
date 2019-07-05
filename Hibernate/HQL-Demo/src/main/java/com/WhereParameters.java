@@ -19,7 +19,7 @@ public class WhereParameters {
 
 		String q1 = "from Employee e where e.empName like :ename";
 
-		Query<Employee> qry = ses.createQuery(q1);
+		Query<Employee> qry = ses.createQuery(q1,Employee.class);
 
 	   qry.setParameter("ename", "%a%");
 		

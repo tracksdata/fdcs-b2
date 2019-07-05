@@ -1,4 +1,4 @@
-package com.cts.employee.entity;
+package com.cts.entity;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -21,20 +21,8 @@ public class Department {
 	private String deptName;
 	private String loc;
 
-	@OneToMany(cascade = CascadeType.ALL,fetch=FetchType.EAGER)
-	//@JoinTable(name = "dept_details", joinColumns = { @JoinColumn(name = "dept") }, 
-	//inverseJoinColumns = {
-	@JoinColumn(name = "empId")
-	List<Employee> emps = new ArrayList<>();
 
-	public List<Employee> getEmps() {
-		return emps;
-	}
-
-	public void setEmps(List<Employee> emps) {
-		this.emps = emps;
-	}
-
+	
 	public int getDeptId() {
 		return deptId;
 	}
