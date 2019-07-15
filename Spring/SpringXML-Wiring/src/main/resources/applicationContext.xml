@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+
+
+	<bean id="myEmp" class="com.Employee" lazy-init="true" scope="prototype" autowire="byName">
+
+		<property name="empId" value="1024" />
+		<property name="empName" value="Praveen" />
+		<property name="salary" value="9347394" />
+
+		<!-- <property name="dept" ref="myDept"/> -->
+
+	</bean>
+
+
+	<bean id="dept1" class="com.Department">
+		<property name="deptId" value="10" />
+		<property name="deptName" value="IT" />
+
+	</bean>
+
+	<bean id="dept" class="com.Department">
+		<property name="deptId" value="11" />
+		<property name="deptName" value="Accounts" />
+
+	</bean>
+
+
+
+</beans>

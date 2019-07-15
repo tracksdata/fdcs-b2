@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns:test="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+
+
+	<bean id="myEmp" name="e1,e2,e3,e4" class="com.Employee" lazy-init="true" scope="prototype">
+
+		<property name="empId" value="1024" />
+		<property name="empName" value="Praveen" />
+		<property name="salary" value="9347394" />
+
+	</bean>
+
+	<bean id="s1" class="com.Employee" lazy-init="true">
+
+		<property name="empId" value="10245" />
+		<property name="empName" value="James" />
+		<property name="salary" value="836438" />
+
+	</bean>
+
+
+
+</beans>
