@@ -14,7 +14,7 @@ import org.springframework.core.env.Environment;
 @PropertySource("application.properties")
 public class AppConfig {
 
-	@Autowired
+	@Autowired()
 	private Environment env;
 
 	@Value("${name}")
