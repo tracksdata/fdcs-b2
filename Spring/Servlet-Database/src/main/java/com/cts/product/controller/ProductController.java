@@ -9,6 +9,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 import com.cts.product.config.AppConfig;
@@ -19,11 +20,12 @@ public class ProductController extends HttpServlet {
 	public ProductController() {
 		System.out.println("--- ProductComtroller Object Created..");
 	}
+
 	private static final long serialVersionUID = 1L;
 
 	public void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
-		AnnotationConfigApplicationContext ac = new AnnotationConfigApplicationContext(AppConfig.class);
+		ApplicationContext ac = new AnnotationConfigApplicationContext(AppConfig.class);
 		ProductService ps = ac.getBean(ProductService.class);
 
 		String option = request.getParameter("menu");
