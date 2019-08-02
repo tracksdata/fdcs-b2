@@ -8,9 +8,11 @@
 </head>
 <body>
 
-<h1 align="center">Product Form</h1> <hr/>
+<h1 align="center">Product Form</h1>
 
 <jsp:include page="menu.jsp"/> <br/>
+ <hr/>
+
 
 	<form action="saveProduct_v2" method="post">
 

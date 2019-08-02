@@ -1,0 +1,33 @@
+Web Services
+---------------- 
+1. SOAP (Simple Object Application Protocal)
+	-> XML bases config
+	-> wsdl (web service defination language)
+2. REST (Representaional State Transfer)
+	-> Text based / XML
+	-> Roy Fielding
+
+1. JAX-WS (Kava API for XML - Web Services)
+	-> SOAP
+	-> Axis Server
+2. JAX-RS (Java API for XAML - Rest Service)
+	-> REST API
+	-> Rest Easy
+	-> Jersy
+
+---------------------------------------------------------
+Spring Rest API
+
+  --> Request HTTP Methods
+	-> GET
+	-> POST
+	-> PUT
+	-> DELETE
+
+
+
+
+
+
+
+	
