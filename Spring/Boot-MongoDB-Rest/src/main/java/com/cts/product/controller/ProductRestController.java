@@ -46,14 +46,15 @@ public class ProductRestController {
 	@PostMapping
 	public ResponseEntity<?> saveProduct(@RequestBody Product prod) {
 		
-		return ResponseEntity.ok(ps.saveProduct(prod));
+		Product p=ps.saveProduct(prod);
+		return ResponseEntity.ok(p);
 		
 	}
 	
 	@PutMapping
 	public ResponseEntity<?> updateProduct(@RequestBody Product prod){
 		
-		Product p=ps.findByproductId(prod.getProdId());
+		Product p=ps.findByproductId(prod.getId());
 		
 		if(p!=null) {
 			return ResponseEntity.ok(ps.saveProduct(prod));
