@@ -15,7 +15,9 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.cts.product.dao.SalesDao;
 import com.cts.product.entities.Product;
+import com.cts.product.entities.Sales;
 import com.cts.product.service.ProductService;
 
 @RestController
@@ -25,6 +27,9 @@ public class ProductRestController {
 	
 	@Autowired
 	private ProductService ps;
+	
+	@Autowired
+	private SalesDao salesDao;
 	
 	@GetMapping
 	public ResponseEntity<List<Product>> listAll(){
@@ -62,6 +67,19 @@ public class ProductRestController {
 		
 		return ResponseEntity.badRequest().body(HttpStatus.NO_CONTENT);
 		
+	}
+	
+	
+	@GetMapping("/sales")
+	public ResponseEntity<List<Sales>> sales(){
+		return ResponseEntity.ok(salesDao.findAll());
+	}
+	
+	
+	@PostMapping("/sales")
+	public ResponseEntity<Sales> saveSales(@RequestBody Sales sales){
+		System.out.println("---------> "+sales);
+		return ResponseEntity.ok(salesDao.save(sales));
 	}
 	
 	@DeleteMapping("/{prodId}")
