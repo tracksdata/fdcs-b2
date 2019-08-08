@@ -1,0 +1,46 @@
+{
+	"admissionId": 98,
+	"itiCode": null,
+	"tradeId": 3,
+	"academicYear": 2019,
+	"studentName": "Bucky",
+	"fatherName": "Wall",
+	"motherName": "Rosa",
+	"dob": "1990-03-07",
+	"sscStatus": "Regular",
+	"gpa": 7.4,
+	"sscMarks": 598,
+	"yearofpass": 2018,
+	"caste": "FC",
+	"subcaste": "FC-A",
+	"enclosedCertifecates": ["BE", "TC", "Bonafied","Photo"],
+	"rationcardNumber": null,
+	"adhaarcardNumber": 111111111111,
+	"admissionDate": "2019-04-23",
+	"meritNo": 0,
+	"hallticketNumber": 506204,
+	"admission": {
+		"admissionId": 1,
+		"tradeId": 3,
+		"itiCode": null,
+		"yearId": 2019
+	},
+	"address": {
+		"addrId": 2,
+		"street1": "S1",
+		"street2": "S2",
+		"hno": "10-10/1",
+		"village": "V1",
+		"mandal": "M1",
+		"city": "C1",
+		"state": "TS",
+		"pincode": 500087,
+		"district": "RR",
+		"contactno": {
+			"contactnoId": 1,
+			"studentNumber": 8584658456,
+			"fatherNumber": 564854856,
+			"otherNumber": 40654533
+		}
+	}
+}
